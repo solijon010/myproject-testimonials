@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  background-color: lightblue;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.parent {
+  max-width: 1200px;
+  /* height: 500px; */
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  font-size: 25px; 
+  margin: 10px 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-weight: bold;
+  gap: 10px;
+  background-color: #3bf1d6;
+}
+
+.parent > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 30px ; */
+  color: black;
+  font-size: 35px;
+  transition: all 0.3s ease;
+}
+
+.parent > div:hover {
+  transform: scale(1.05);
+  border-color: black;
+}
+
+.div1 {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  height: 150px;
+  width: 250px;
+  background-color: yellow;
+  border: 2px dashed black;
+}
+
+
+.div2 {
+  grid-column: span 2 / span 2;
+  grid-column-start: 3;
+  background-color: orange;
+  border: 2px dashed black;
+}
+
+.div3 {
+  grid-column-start: 5;
+  background-color: rgb(208, 31, 31);
+  border: 2px dashed black;
+}
+
+.div4 {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 6;
+  background-color: darkred;
+  border: 2px dashed black;
+}
+
+.div5 {
+  grid-column: span 2 / span 2;
+  grid-column-start: 8;
+  background-color: rgb(113, 2, 73);
+  border: 2px dashed black;
+}
+
+.div6 {
+  grid-column-start: 10;
+  background-color: rgb(24, 1, 44);
+  border: 2px dashed black;
+}
+
+.div7 {
+  grid-column: span 2 / span 2;
+  grid-column-start: 1;
+  grid-row-start: 3;
+  background-color: rgb(68, 28, 100);
+  border: 2px dashed black;
+}
+
+.div8 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 3;
+  grid-row-start: 2;
+  background-color: rgb(18, 89, 122);
+  border: 2px dashed black;
+}
+
+.div9 {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 4;
+  grid-row-start: 2;
+  background-color: rgb(25, 121, 166);
+  border: 2px dashed black;
+}
+
+.div10 {
+  grid-column: span 2 / span 2;
+  grid-column-start: 6;
+  grid-row-start: 3;
+  background-color: rgb(7, 82, 78);
+  border: 2px dashed black;
+}
+
+.div11 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 8;
+  grid-row-start: 2;
+  background-color: rgb(6, 93, 68);
+  border: 2px dashed black;
+}
+
+.div12 {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 9;
+  grid-row-start: 2;
+  background-color: rgb(6, 80, 38);
+  border: 2px dashed black;
+}
+
+.div13 {
+  grid-row-start: 4;
+  background-color: rgb(49, 162, 79);
+  border: 2px dashed black;
+}
+
+.div14 {
+  grid-column: span 2 / span 2;
+  grid-row-start: 4;
+  background-color: rgb(96, 122, 18);
+  border: 2px dashed black;
+}
+
+.div15 {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 4;
+  grid-row-start: 4;
+  background-color: rgb(99, 122, 18);
+  border: 2px dashed black;
+}
+
+.div16 {
+  grid-column-start: 6;
+  grid-row-start: 4;
+  background-color: rgb(163, 117, 8);
+  border: 2px dashed black;
+}
+
+.div17 {
+  grid-column: span 2 / span 2;
+  grid-column-start: 7;
+  grid-row-start: 4;
+  background-color: rgb(62, 27, 3);
+  border: 2px dashed black;
+}
+
+.div18 {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 9;
+  grid-row-start: 4;
+  background-color: rgb(76, 66, 60);
+  border: 2px dashed black;
+}
+
+.div19 {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-row-start: 5;
+  background-color: rgb(33, 135, 12);
+  border: 2px dashed black;
+}
+
+.div20 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 3;
+  grid-row-start: 5;
+  background-color: rgb(192, 38, 38);
+  border: 2px dashed black;
+}
+
+.div21 {
+  grid-column: span 2 / span 2;
+  grid-column-start: 4;
+  grid-row-start: 6;
+  background-color: rgb(60, 194, 23);
+  border: 2px dashed black;
+}
+
+.div22 {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 6;
+  grid-row-start: 5;
+  background-color: rgb(235, 174, 5);
+  border: 2px dashed black;
+}
+
+.div23 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 8;
+  grid-row-start: 5;
+  background-color: rgb(174, 7, 7);
+  border: 2px dashed black;
+}
+
+.div24 {
+  grid-column: span 2 / span 2;
+  grid-column-start: 9;
+  grid-row-start: 6;
+  background-color: rgb(80, 11, 107);
+  border: 2px dashed black;
+}
+
